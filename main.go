@@ -117,7 +117,7 @@ func (di *dirtyImg) cleanUp() {
 
 func main() {
 	if len(os.Args) < 3 {
-		panic("Faltaram os nomes dos arquivos")
+		panic("Input and output filenames are missing.")
 	}
 
 	in, err := os.Open(os.Args[1])
